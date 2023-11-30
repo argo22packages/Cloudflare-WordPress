@@ -1,5 +1,22 @@
 # Cloudflare’s Plugin for WordPress
 
+> [!CAUTION]
+> This plugin is a fork of [the version that adds support for PHP 8.2](https://github.com/Tanguy-Magnaudet/Cloudflare-WordPress/tree/php-8.2-deprecation) and with the [upstream](https://github.com/cloudflare/Cloudflare-WordPress) changes merged.
+
+## How to build
+
+```bash
+# Clone the repo into cloudflare directory
+git clone git@github.com:argo22packages/Cloudflare-WordPress.git cloudflare
+
+# Install dependencies
+cd cloudflare
+composer install --no-dev
+
+# Create a zip file
+zip -r ../cloudflare.zip .
+```
+
 ![build status](https://github.com/cloudflare/Cloudflare-WordPress/workflows/PHP%20Composer/badge.svg)
 
 Cloudflare’s WordPress plugin brings all of the benefits of Cloudflare into your WordPress dashboard for configuration, including a one-click application of default settings specifically optimized for WordPress.
@@ -14,7 +31,7 @@ By enabling Cloudflare on your WordPress website, you’ll find performance and 
 [Features](#features)  
 [FAQ](#faq)  
 [Contributions](#contributions)  
-[Changelog](#changelog)  
+[Changelog](#changelog)
 
 ## Description
 
@@ -40,10 +57,10 @@ Cloudflare’s plugin for WordPress automatically refreshes the Cloudflare cache
 
 ### Additional Features
 
-- Header rewrites to prevent a redirect loop when Cloudflare’s Universal SSL is enabled.
-- Change Cloudflare settings from within the plugin without needing to navigate to the Cloudflare.com dashboard. You can change settings for cache purge, security level, Always Online™, and image optimization.
-- View analytics such as total visitors, bandwidth saved, and threats blocked.
-- Support for HTTP2/Server Push.
+-   Header rewrites to prevent a redirect loop when Cloudflare’s Universal SSL is enabled.
+-   Change Cloudflare settings from within the plugin without needing to navigate to the Cloudflare.com dashboard. You can change settings for cache purge, security level, Always Online™, and image optimization.
+-   View analytics such as total visitors, bandwidth saved, and threats blocked.
+-   Support for HTTP2/Server Push.
 
 ## Installation
 
@@ -63,7 +80,7 @@ Yes, on install and activation the plugin, first time users will be asked to ent
 
 ### What settings are applied when I click "Apply Default Settings" in Cloudflare's WordPress plugin?
 
- You can review the recommended settings that are applied, here: <https://support.cloudflare.com/hc/en-us/articles/227342487>
+You can review the recommended settings that are applied, here: <https://support.cloudflare.com/hc/en-us/articles/227342487>
 
 ### Does the plugin work if I have Varnish enabled?
 

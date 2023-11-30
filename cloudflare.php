@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Cloudflare
-Plugin URI: https://blog.cloudflare.com/new-wordpress-plugin/
+Plugin URI: https://github.com/argo22packages/Cloudflare-WordPress
 Description: Cloudflare speeds up and protects your WordPress site.
-Version: 4.12.2
+Version: 5-argo
 Requires PHP: 7.2
-Author: Cloudflare, Inc.
+Author: Cloudflare, Inc., forked by Argo22 for php 8.2 compatibility
 License: BSD-3-Clause
 */
 
