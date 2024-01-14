@@ -139,7 +139,7 @@ class Hooks
 
     public function initCronScheduleQueuePurge()
     {
-        if (!apply_filters('cloudflare_purge_on_cron', false)) {
+        if (!apply_filters('cloudflare_purge_on_cron', true)) {
             return;
         }
 
@@ -186,7 +186,7 @@ class Hooks
 
     public function purgeCacheByRelevantURLs($postIds)
     {
-        if (apply_filters('cloudflare_purge_on_cron', false)) {
+        if (apply_filters('cloudflare_purge_on_cron', true)) {
             return $this->cronQueuePostIdPurge((array) $postIds);
         } else {
             return $this->purgeCacheByPostIds($postIds);
